@@ -1,0 +1,179 @@
+/* --- CSS Variables & Theming --- */
+:root {
+    /* Light Mode (Default) */
+    --bg-color: #f8f9fa;
+    --surface-color: #ffffff;
+    --text-primary: #1c1b1f;
+    --text-secondary: #49454f;
+    --primary-color: #6750A4; /* REPLACE THIS with your App's Primary Color */
+    --on-primary: #ffffff;
+    --border-color: #e7e0ec;
+    --shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Dark Mode Detection */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;   /* Material 3 Dark Background */
+        --surface-color: #1e1e1e; /* Card Background */
+        --text-primary: #e6e1e5;
+        --text-secondary: #cac4d0;
+        --primary-color: #D0BCFF; /* REPLACE with your App's Dark Primary Color */
+        --on-primary: #381E72;
+        --border-color: #49454f;
+        --shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+}
+
+/* --- Global Reset & Typography --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* --- Navigation --- */
+nav {
+    background-color: var(--surface-color);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1rem 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Hero Section --- */
+header {
+    text-align: center;
+    padding: 60px 0 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--on-primary);
+    padding: 12px 24px;
+    border-radius: 25px; /* Pill shape like Material 3 */
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* --- Content Cards --- */
+.card {
+    background-color: var(--surface-color);
+    border-radius: 16px; /* Material 3 Rounding */
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+p, li {
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.last-updated {
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    .nav-links { gap: 15px; }
+    .card { padding: 20px; }
+}
