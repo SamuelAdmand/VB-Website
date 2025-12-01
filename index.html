@@ -14,16 +14,12 @@
 <body>
 
     <!-- Navigation -->
-    <nav>
-        <div class="container nav-content">
-            <div class="logo">Vocab Builder</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#privacy-policy">Privacy Policy</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#tutorials">Tutorials</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
 
     <!-- Header / Hero Section -->
     <header id="about">
@@ -36,43 +32,41 @@
     </header>
 
     <main class="container">
-        
-        <!-- Privacy Policy Section (CRITICAL FOR PLAY STORE) -->
-        <section id="privacy-policy" class="card">
-            <h2>Privacy Policy</h2>
-            <p class="last-updated">Last updated: November 26, 2025</p>
 
-            <h3>1. Introduction</h3>
-            <p>Vocab Builder ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Vocab Builder.</p>
+        <!-- Tutorials Section -->
+<section id="tutorials" class="card">
+    <h2>Tutorials</h2>
 
-            <h3>2. Data Collection</h3>
-            <p>We prioritize your data privacy. Most data created within the app (word lists, definitions, progress) is stored locally on your device.</p>
+    <h3>Adding a Custom Dictionary</h3>
+    <p>Follow these steps to integrate external web dictionaries into the app:</p>
+    <ol style="margin-left: 20px; margin-bottom: 20px; color: var(--text-secondary);">
+        <li>Navigate to the <strong>Settings</strong> screen in the app.</li>
+        <li>Find the section for managing dictionaries and select <strong>"Add Custom Dictionary"</strong>.</li>
+        <li>You will be prompted to enter:
             <ul>
-                <li><strong>Personal Data:</strong> We do not sell your personal data to third parties.</li>
-                <li><strong>Backup Data:</strong> If you use the backup feature, your data is stored in the location you select (local storage).</li>
+                <li><strong>Dictionary Name:</strong> A short name (e.g., "Longman").</li>
+                <li><strong>URL:</strong> The search URL containing the <code>{query}</code> placeholder.</li>
             </ul>
+        </li>
+    </ol>
 
-            <h3>3. Permissions</h3>
-            <p>The app may request the following permissions to function correctly:</p>
-            <ul>
-                <li><strong>Storage/Files:</strong> Required to backup and restore your vocabulary lists (`.zip` files).</li>
-                <li><strong>Billing:</strong> Required to process one-time premium purchases via Google Play Billing.</li>
-                <li><strong>Internet:</strong> Required to fetch definitions and verify purchase signatures.</li>
-                <li><strong>Microphone:</strong> This app uses the microphone only for voice search functionality and does not store audio data.</li>
-            </ul>
+    <h3>Ready-to-Use Dictionary URLs</h3>
+    <p>Copy and paste these directly into the app:</p>
 
-            <h3>4. Third-Party Services</h3>
-            <p>We use the following third-party services which may collect information used to identify you:</p>
-            <ul>
-                <li><strong>Google Play Services:</strong> For app distribution and billing.</li>
-            </ul>
+    <div style="background-color: var(--bg-color); padding: 15px; border-radius: 8px; margin-top: 15px; border: 1px solid var(--border-color);">
+        <p><strong>Oxford Advanced Learner's Dictionary</strong></p>
+        <p style="font-family: monospace; font-size: 0.9em; word-break: break-all; margin-top: 5px;">
+            https://www.oxfordlearnersdictionaries.com/definition/english/{query}
+        </p>
+    </div>
 
-            <h3>5. Changes to This Policy</h3>
-            <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes.</p>
-
-            <h3>6. Contact Us</h3>
-            <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
-        </section>
+    <div style="background-color: var(--bg-color); padding: 15px; border-radius: 8px; margin-top: 15px; border: 1px solid var(--border-color);">
+        <p><strong>Longman Dictionary of Contemporary English</strong></p>
+        <p style="font-family: monospace; font-size: 0.9em; word-break: break-all; margin-top: 5px;">
+            https://www.ldoceonline.com/dictionary/{query}
+        </p>
+    </div>
+</section>
 
         <!-- Instructions / Help Section -->
         <section id="instructions" class="card">
