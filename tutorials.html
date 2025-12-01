@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocab Builder - Tutorials</title>
+    <meta name="description" content="Tutorials and guides for using the Vocab Builder App.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">Vocab Builder</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Tutorials</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>App Tutorials</h1>
+            <p>Learn how to get the most out of Vocab Builder.</p>
+        </div>
+    </div>
+
+    <main class="container">
+        
+        <!-- Custom Dictionary Tutorial -->
+        <section class="content-card">
+            <h2>Adding a Custom Dictionary</h2>
+            <p>Vocab Builder allows you to integrate external web dictionaries directly into the app's lookup flow. Follow these steps:</p>
+            
+            <ol>
+                <li>Open the app and navigate to the <strong>Settings</strong> screen.</li>
+                <li>Scroll to the "Dictionaries" section and tap <strong>"Add Custom Dictionary"</strong>.</li>
+                <li>You will be prompted to enter:
+                    <ul>
+                        <li><strong>Dictionary Name:</strong> A short label (e.g., "Longman").</li>
+                        <li><strong>Dictionary URL:</strong> The search URL containing the special <code>{query}</code> placeholder.</li>
+                    </ul>
+                </li>
+                <li>Tap <strong>Save</strong>. You can now select this dictionary from the search results screen.</li>
+            </ol>
+
+            <h3>Ready-to-Use URLs</h3>
+            <p>You can copy and paste these URLs directly into the app:</p>
+
+            <div style="margin-top: 20px;">
+                <p><strong>Oxford Advanced Learner's Dictionary</strong></p>
+                <div class="code-block">
+                    https://www.oxfordlearnersdictionaries.com/definition/english/{query}
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <p><strong>Longman Dictionary of Contemporary English</strong></p>
+                <div class="code-block">
+                    https://www.ldoceonline.com/dictionary/{query}
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ / Backup Tutorial Placeholder -->
+        <section class="content-card">
+            <h2>Backup & Restore</h2>
+            <p>To keep your data safe, we recommend creating regular backups.</p>
+            <ol>
+                <li>Go to the <strong>More</strong> tab.</li>
+                <li>Select <strong>Backup & Restore</strong>.</li>
+                <li>Tap <strong>Export Data</strong> to save a secure <code>.zip</code> file to your device.</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vocab Builder. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

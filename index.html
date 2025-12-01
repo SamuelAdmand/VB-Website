@@ -3,94 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vocab Builder - Privacy Policy & Info</title>
-    <meta name="description" content="Privacy Policy and Instructions for the Vocab Builder App.">
+    <title>Vocab Builder - Master New Words</title>
+    <meta name="description" content="A powerful, personalized tool to help you master new words, track your progress, and export your data.">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Roboto for Android look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#tutorials">Tutorials</a></li>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">Vocab Builder</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Header / Hero Section -->
-    <header id="about">
-        <div class="container hero">
-            <h1>Build Your Vocabulary Efficiently</h1>
-            <p>A powerful, personalized tool to help you master new words, track your progress, and export your data.</p>
-            <!-- Placeholder for Play Store Badge later -->
-            <a href="#" class="btn-primary">Download App</a>
+    <header class="hero">
+        <div class="container">
+            <h1>Build Your Vocabulary<br>Efficiently</h1>
+            <p>The ultimate tool to capture, organize, and master new words. Features offline dictionaries, smart flashcards, and secure backups.</p>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">Download App</a>
+                <a href="tutorials.html" class="btn btn-secondary">Read Tutorials</a>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-
-        <!-- Tutorials Section -->
-<section id="tutorials" class="card">
-    <h2>Tutorials</h2>
-
-    <h3>Adding a Custom Dictionary</h3>
-    <p>Follow these steps to integrate external web dictionaries into the app:</p>
-    <ol style="margin-left: 20px; margin-bottom: 20px; color: var(--text-secondary);">
-        <li>Navigate to the <strong>Settings</strong> screen in the app.</li>
-        <li>Find the section for managing dictionaries and select <strong>"Add Custom Dictionary"</strong>.</li>
-        <li>You will be prompted to enter:
-            <ul>
-                <li><strong>Dictionary Name:</strong> A short name (e.g., "Longman").</li>
-                <li><strong>URL:</strong> The search URL containing the <code>{query}</code> placeholder.</li>
-            </ul>
-        </li>
-    </ol>
-
-    <h3>Ready-to-Use Dictionary URLs</h3>
-    <p>Copy and paste these directly into the app:</p>
-
-    <div style="background-color: var(--bg-color); padding: 15px; border-radius: 8px; margin-top: 15px; border: 1px solid var(--border-color);">
-        <p><strong>Oxford Advanced Learner's Dictionary</strong></p>
-        <p style="font-family: monospace; font-size: 0.9em; word-break: break-all; margin-top: 5px;">
-            https://www.oxfordlearnersdictionaries.com/definition/english/{query}
-        </p>
-    </div>
-
-    <div style="background-color: var(--bg-color); padding: 15px; border-radius: 8px; margin-top: 15px; border: 1px solid var(--border-color);">
-        <p><strong>Longman Dictionary of Contemporary English</strong></p>
-        <p style="font-family: monospace; font-size: 0.9em; word-break: break-all; margin-top: 5px;">
-            https://www.ldoceonline.com/dictionary/{query}
-        </p>
-    </div>
-</section>
-
-        <!-- Instructions / Help Section -->
-        <section id="instructions" class="card">
-            <h2>Instructions & FAQ</h2>
-            <div class="faq-item">
-                <h3>How do I backup my data?</h3>
-                <p>Go to the "More" screen, select "Backup & Restore," and choose "Export Data". This will create a secure ZIP file on your device.</p>
+    <section class="features-section container">
+        <h2 class="section-title">Why Vocab Builder?</h2>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <span class="icon">📚</span>
+                <h3>Offline Dictionary</h3>
+                <p>Access definitions, synonyms, and examples instantly without an internet connection. Perfect for on-the-go learning.</p>
             </div>
-            <div class="faq-item">
-                <h3>Is the dictionary offline?</h3>
-                <p>Yes. Once the initial dictionary database is downloaded, you can search for words without an internet connection.</p>
+
+            <div class="feature-card">
+                <span class="icon">🧠</span>
+                <h3>Smart Flashcards</h3>
+                <p>Master words using our spaced repetition system. Track your progress with detailed insights and mastery scores.</p>
             </div>
-        </section>
 
-    </main>
+            <div class="feature-card">
+                <span class="icon">🔒</span>
+                <h3>Private & Secure</h3>
+                <p>Your data stays on your device. We offer robust encrypted backups so you never lose your learning history.</p>
+            </div>
 
-    <!-- Footer -->
-    <footer id="contact">
+            <div class="feature-card">
+                <span class="icon">🌐</span>
+                <h3>Custom Sources</h3>
+                <p>Integrate your favorite web dictionaries directly into the app for a seamless lookup experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
         <div class="container">
-            <p>&copy; <span id="year"></span> Vocab Builder. All rights reserved.</p>
-            <p>Contact: <a href="mailto:snowden06062013@protonmail.com">snowden06062013@protonmail.com</a></p>
+            <p>&copy; 2025 Vocab Builder. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">
+                <a href="mailto:snowden06062013@protonmail.com">Contact Support</a>
+            </p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
